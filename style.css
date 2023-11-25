@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background-image: url("task2.avif");
+    background-size: cover;
+    color: #343a40;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(8px);
+    background: rgba(255 , 255, 255, 0.4);
+}
+header nav{
+    background-color: cornflowerblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 40%;
+    justify-content: space-between;
+} 
+
+.task-form{
+    margin: 10px;
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 34%;
+    padding: 10px    ;
+}
+.task-form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 450px;
+    transition: all .3s ease-in-out;
+
+}
+.task-form button{
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: #343a40;
+    transition: background-color 0.4 ease-in-out;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+.task-form button:hover{
+    background-color: rgb(115, 140, 186);
+    border-color: #fff;
+}
+
+.task-form label{
+    font-size: 18px;   
+    font-weight: 600;
+    position: relative; 
+    margin-bottom: 15%;
+
+}
+.taskList h2{
+    margin: 10px;
+    position: relative;
+    left: 35%;
+    margin-top: 1%;
+}
+.taskList ul{
+    margin: 10px;
+    position: relative;
+    left: 35%;
+    list-style-type: circle;
+    font-size: 21px;
+}
+.taskList li{
+    margin: 10px;
+    position: relative;
+    left: 35%;
+    font-size: 21px;
+}
+.tasks {
+    width: 70%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+}
+
+button {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: none; */
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    transition: background-color 0.4 ease-in-out;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+.card-body button{
+    position: relative;
+    margin-bottom: 8%;
+    margin-right: 5%;
+    border: 1px solid black;
+}
+.card-body button:hover{
+    background-color: rgb(202, 33, 33);
+    border-color: #fff;
+}
+.task-card{
+    border: 1px solid #d2d0d0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-info {
+    padding: 8px;
+    margin-left: 10%;
+}
+.notification {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.notification .fa-bell {
+    font-size: 28px;
+}
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 6px 8px;
+    font-size: 15px;
+}
+.notification-container {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    max-height: 400px;
+    margin-top: 10px;
+    overflow-y: auto;
+    /* overflow-x: scroll; */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: none;
+}
+.notification-item {
+    /* position: fixed; */
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 15px;
+    background: white;
+    color: #ddd;
+    padding: 5px 10px;
+    border: none;
+    align-items: center;
+}
+.reminder-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.reminder-text {
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 30%;
+}
